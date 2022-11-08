@@ -1,0 +1,62 @@
+//api that fetches all the tasks
+GET http://localhost:4000/api/v1/get-all-tasks
+Content-Type: application/json
+
+###
+
+
+//api to add/create new task
+POST http://localhost:4000/api/v1/create-new-task
+Content-Type: application/json
+
+{
+    "title":"First task",
+    "description":"Develop a todo web application"
+}
+
+
+###
+
+
+POST http://localhost:4000/api/v1/create-new-task
+Content-Type: application/json
+
+{
+    "title":"Second task",
+    "description":"Check the todo web application"
+}
+
+###
+
+
+POST http://localhost:4000/api/v1/create-new-task
+Content-Type: application/json
+
+{
+    "title":"Third task",
+    "description":"Recheck the todo web application"
+}
+
+
+###
+
+
+
+//api that update a task given by id
+PUT http://localhost:4000/api/v1/update-task/636a010581d391be4c3d759d
+Content-Type: application/json
+
+{
+    "title":"Third Task",
+    "description": "Please recheck the todo web application"
+}
+
+
+###
+
+
+//api that delete a task given by id
+DELETE http://localhost:4000/api/v1/delete-task/636a01e181d391be4c3d75a2
+Content-Type: application/json
+
+###
